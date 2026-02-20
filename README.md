@@ -36,3 +36,8 @@ Developers may use the database as a backend for:
 * Dashboards displaying music rankings
 * Reporting tools for streaming analytics
 * Educational or prototype music-analytics applications
+
+## Database Software
+
+The database application I intend to use is [PostGreSQL](https://www.postgresql.org/) if permitted, otherwise I will use Oracle SQL.
+PostGreSQL offers strong string manipulation functions built in, allowing for particular ease of navigating my database.
