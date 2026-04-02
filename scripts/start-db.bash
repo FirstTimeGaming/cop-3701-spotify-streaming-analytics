@@ -1,0 +1,1 @@
+docker run --name spotify-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=spotify_streaming_analytics -p 5432:5432 -d postgres:16

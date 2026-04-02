@@ -1,5 +1,14 @@
 # Spotify Music Streaming Analytics Database
 
+## Dependencies
+
+- `docker`
+
+## Starting the DB
+
+1. Run the start command `docker run --name spotify-postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=spotify_streaming_analytics -p 5432:5432 -d postgres:16`
+2. 
+
 ## Project Statement
 Design a music analytics database tracking tracks, artists, and popularity metrics. Must include trend evolution analysis and ranking by rolling popularity scores.
 
@@ -41,3 +50,11 @@ Developers may use the database as a backend for:
 
 The database application I intend to use is [PostGreSQL](https://www.postgresql.org/) if permitted, otherwise I will use Oracle SQL.
 PostGreSQL offers strong string manipulation functions built in, allowing for particular ease of navigating my database.
+
+## Data Cleaning
+There were very few rows with any null data that would cause issues. Those were simply removed.
+
+Prior statistical analysis shows no extreme outliers that would negatively affect the data.
+Intetional Choices include removing tracks >10m (atypical music tracks outside the scope of this project) only around ~2k rows (<1% of the total dataset)
+
+DB Structure Enforcement was setup through insert scripts in Python.
