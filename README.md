@@ -46,6 +46,8 @@ Developers may use the database as a backend for:
 * Reporting tools for streaming analytics
 * Educational or prototype music-analytics applications
 
+A small **Next.js dashboard** in [`web/`](web/) runs read-only analytics against this database. Setup (Node.js, npm, pnpm, `pnpm install`), environment variables, and full query documentation live in [`web/README.md`](web/README.md).
+
 ## Database Software
 
 The database application I intend to use is [PostGreSQL](https://www.postgresql.org/) if permitted, otherwise I will use Oracle SQL.
